@@ -1,0 +1,173 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-bottom: 200px;
+}
+
+h2{
+  color: brown;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+
+.container{
+  display: flex;
+  width: 600px;
+  height: 400px;
+  background-color: cadetblue;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  color: white;
+  font-size: 30px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.elastic-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  color: white;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.box2{
+  margin: 0;
+}
+
+.container.due{
+  flex-direction: column;
+}
+
+.container.tre{
+  flex-direction: row-reverse;
+}
+
+.container.quattro{
+  flex-direction: column-reverse;
+}
+
+.container.cinque{
+  /* default */
+  justify-content: flex-start;
+}
+
+.container.sei{
+  justify-content: flex-end;
+}
+
+.container.sette{
+  justify-content:space-between;
+}
+
+
+.container.otto{
+  justify-content:space-around;
+}
+
+.container.nove{
+  justify-content:space-evenly;
+}
+
+.container.dieci{
+  justify-content:center;
+}
+
+.container.undici{
+  /* default */
+  align-items: start;
+}
+
+.container.dodici{
+  align-items: end;
+}
+
+.container.tredici{
+  align-items: center;
+}
+
+.container.quattordici{
+  justify-content: center;
+  align-items: center;
+}
+
+.container.quindici{
+  align-items: baseline;
+}
+
+.container.quindici .uno{
+  height: 150px;
+}
+.container.quindici .due{
+  height: 50px;
+}
+.container.quindici .tre{
+  height: 200px;
+}
+
+
+.container.sedici{
+  align-items:stretch;
+}
+
+.container.diciotto{
+  height: 600px;
+  flex-wrap: wrap;
+}
+
+.container.diciannove{
+  flex-wrap: wrap;
+  /*align-content è l'equivalente di justufy-content ma sul cross axis*/
+  align-content: flex-start;
+}
+
+.container.venti{
+  flex-wrap: wrap-reverse;
+  align-content: flex-start;
+}
+
+.container.ventuno .uno{
+  flex-grow: 1;
+}
+.container.ventuno .zero{
+  flex-basis: 100px;
+  flex-grow: 0;
+}
+.container.ventuno .tre{
+  flex-grow: 3;
+}
+.container.ventuno .due{
+  flex-grow: 2;
+}
+
+.container.ventidue .elastic-box{
+  flex-grow: 1;
+}
+
+.container.ventitre .uno{
+  order: 1;
+}
+.container.ventitre .due{
+  order: 2;
+}
+.container.ventitre .tre{
+  order: 3;
+}
